@@ -8,13 +8,6 @@ decides whether it needs to check another one, and only answers once it
 has enough. Every step is logged and shown, so the reasoning is
 auditable, not just the final answer.
 
-This reuses the same agentic architecture as
-[SentinelRAG](../sentinelrag) (a cybersecurity-domain version of the
-same idea) — the ingestion, chunking, embedding, hybrid retrieval,
-re-ranking, and agent-loop code are unchanged. What's different here is
-entirely the domain: the corpus, the three tools, the system prompt, and
-the eval questions.
-
 ## Why this needs multiple hops
 
 A single-hop RAG system answers with one search. That's fine for
